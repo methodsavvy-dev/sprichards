@@ -1,4 +1,4 @@
-<div class="careers-icons-block block <?php echo $block['className'] ?>">
+<div class="careers-icons-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="container">
 		<ul class="careers-icons-block__list">
 			<li class="careers-icons-block__item">

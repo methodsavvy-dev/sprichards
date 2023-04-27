@@ -1,4 +1,4 @@
-<div class="icon-card-panel-block block <?php echo $block['className'] ?>">
+<div class="icon-card-panel-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="container">
 		<div class="icon-card-panel-block__inner">
 			<div class="icon-card-panel-block__content">

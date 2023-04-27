@@ -1,4 +1,4 @@
-<div class="timeline-block block <?php echo $block['className'] ?>">
+<div class="timeline-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="timeline-block__side-years-container">
 		<div class="timeline-block__side-years">
 			<div class="timeline-block__side-year">1850</div>

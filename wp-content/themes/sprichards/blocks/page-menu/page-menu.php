@@ -3,7 +3,7 @@ $the_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
 $slug = $the_page->post_name;
 ?>
 
-<section class="page-menu-block block <?php echo $block['className'] ?>">
+<section class="page-menu-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
   <div class="container">
     <?php if (have_rows('menus')) : ?>
       <nav class="page-menu-block__nav">

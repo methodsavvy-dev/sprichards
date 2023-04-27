@@ -3,7 +3,7 @@ $the_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
 $slug = $the_page->post_name;
 ?>
 
-<section class="product-page-menu-block block <?php echo $block['className'] ?>">
+<section class="product-page-menu-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
   <div class="container">
     <nav class="product-page-menu-block__nav">
       <ul class="product-page-menu-block__nav-list">

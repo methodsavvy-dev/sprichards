@@ -26,7 +26,7 @@
 ?>
 
 <?php if (!is_home() && !is_front_page()) : ?>
-  <header class="block page-title-block <?php echo $block['className'] ?>" style="background-image: url(<?php echo $background; ?>);">
+  <header class="block page-title-block <?php echo isset($block['className']) ? $block['className'] : ''; ?>" style="background-image: url(<?php echo $background; ?>);">
     <div class="container">
       <?php if (get_field('page_title')) : ?>
         <h1 class="page-title-block__content">

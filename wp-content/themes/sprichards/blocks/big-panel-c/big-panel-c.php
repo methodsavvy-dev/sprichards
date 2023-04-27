@@ -1,4 +1,4 @@
-<div id="<?php echo get_field('anchor') ?>" class="big-panel-c block <?php echo $block['className'] ?>" style="background-color: <?php echo get_field('block_background_color') ?: "#fff"; ?>">
+<div id="<?php echo get_field('anchor') ?>" class="big-panel-c block <?php echo isset($block['className']) ? $block['className'] : ''; ?>" style="background-color: <?php echo get_field('block_background_color') ?: "#fff"; ?>">
 	<div class="container-wide">
 		<div class="big-panel-c__inner" data-reverse="<?php echo get_field('flip_content'); ?>">
 			<div class="big-panel-c__image">

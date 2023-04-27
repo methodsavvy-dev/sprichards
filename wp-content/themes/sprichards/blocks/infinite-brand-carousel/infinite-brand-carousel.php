@@ -1,4 +1,4 @@
-<div class="infinite-brand-carousel-block block <?php echo $block['className'] ?>">
+<div class="infinite-brand-carousel-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="container">
 		<div class="infinite-brand-carousel-block__inner">
 			<div class="infinite-brand-carousel-block__content">

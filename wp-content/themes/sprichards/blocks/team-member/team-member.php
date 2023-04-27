@@ -3,7 +3,7 @@ $modalId = 'member-modal-' . $block['id'];
 $photo = get_field('photo');
 ?>
 
-<div class="team-member-block block <?php echo $block['className'] ?>">
+<div class="team-member-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<!-- member card -->
 	<div class="team-member-block__card member-card" data-micromodal-trigger="<?php echo $modalId; ?>">
 

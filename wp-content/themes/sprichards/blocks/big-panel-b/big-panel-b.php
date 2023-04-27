@@ -1,4 +1,4 @@
-<div class="big-panel-b block <?php echo $block['className'] ?>">
+<div class="big-panel-b block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="container">
 		<div class="big-panel-b__inner" data-reverse="<?php echo get_field('flip_content_on_desktop'); ?>">
 			<div class="big-panel-b__image">

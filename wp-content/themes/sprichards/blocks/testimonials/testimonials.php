@@ -1,4 +1,4 @@
-<div class="testimonials-block block <?php echo $block['className'] ?>">
+<div class="testimonials-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="container">
 		<div class="testimonials-block__header">
 			<h3 class="testimonials-block__title section-title with-red-line-mobile-only">

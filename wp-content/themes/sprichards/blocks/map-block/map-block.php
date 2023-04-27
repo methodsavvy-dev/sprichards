@@ -1,4 +1,4 @@
-<div class="map-block block <?php echo $block['className'] ?>">
+<div class="map-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="map-block__inner">
 		<div class="map-block__content">
 			<div class="map-block__map">

@@ -2,7 +2,7 @@
 $photo = get_field('photo');
 ?>
 
-<div class="careers-team-card-block block <?php echo $block['className'] ?>">
+<div class="careers-team-card-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="careers-team-card-block__inner-container">
 		<div class="careers-team-card-block__inner">
 			<div class="careers-team-card-block__image">

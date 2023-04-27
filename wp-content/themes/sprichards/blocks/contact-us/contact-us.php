@@ -1,4 +1,4 @@
-<div class="contact-us-block block <?php echo $block['className'] ?>">
+<div class="contact-us-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
 	<div class="container">
 		<div class="contact-us-block__inner">
 			<div class="contact-us-block__content">

@@ -1,4 +1,4 @@
-<div class="join-us-block block <?php echo $block['className'] ?>">
+<div class="join-us-block block <?php echo isset($block['className']) ? $block['className'] : ''; ?>">
   <div class="container">
     <div class="join-us-block__item join-us-block__content">
       <h3><?php the_field('title'); ?></h3>
