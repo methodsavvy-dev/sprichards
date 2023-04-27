@@ -1,7 +1,7 @@
 {
-  "title": "Logistics Map Block",
-  "name": "sprichards/logistics-map-block",
-  "description": "Logistics Map Block",
+  "title": "Logistics Map Editable Block",
+  "name": "sprichards/logistics-map-editable-block",
+  "description": "Logistics Map Editable Block",
   "author": "Aarón Maldonado @ Method Savvy",
   "keywords": ["block", "logistics"],
   "category": "content",
@@ -10,6 +10,6 @@
   "align": "full",
   "acf": {
     "mode": "edit",
-    "renderTemplate": "logistics-map-block.php"
+    "renderTemplate": "logistics-map-editable-block.php"
   }
 }

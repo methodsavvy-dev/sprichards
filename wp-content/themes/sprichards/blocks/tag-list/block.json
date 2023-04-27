@@ -7,7 +7,7 @@
   "version": "1.0.0",
   "align": "full",
   "acf": {
-    "mode": "preview",
+    "mode": "edit",
     "renderTemplate": "tag-list.php"
   }
 }

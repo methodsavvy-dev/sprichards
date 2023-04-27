@@ -9,7 +9,7 @@
   "icon": "menu-alt",
   "align": "full",
   "acf": {
-    "mode": "preview",
+    "mode": "edit",
     "renderTemplate": "footer-navigation.php"
   }
 }
