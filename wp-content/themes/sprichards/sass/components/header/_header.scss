@@ -1,0 +1,64 @@
+.site-header {
+	background: linear-gradient(180.6deg, rgba(42, 23, 23, 0.56) 0.52%, rgba(42, 24, 24, 0.508839) 42.55%, rgba(49, 31, 31, 0) 99.48%);
+	transition: transform 0.3s ease-in-out, background-color 0.5s ease-out;
+	position: fixed;
+	z-index: 10000;
+	width: 100%;
+	left: 0;
+	top: 0;
+
+	.container {
+		display: flex;
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.site-branding a svg {
+		display: block;
+		width: 3.25rem;
+		height: 2.25rem;
+	}
+
+	&.nav-up,
+	&.nav-down {
+		background-color: rgba(0, 0, 0, 0.5);
+
+		.desktop-navigation .sub-menu {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	&.nav-up {
+		transform: translateY(-100%);
+
+	}
+
+	&.nav-down {
+		transform: translateY(0);
+	}
+}
+
+// displays the mobile menu when the hamburger is clicked
+.menu-opened .site-header {
+	position: absolute;
+	transition: none;
+	transform: none;
+}
+
+@media ( min-width: map.get($breakpoints, "lg") ) {
+
+	.site-header {
+
+		.container {
+			padding-top: 2.125rem;
+			padding-bottom: 2.125rem;
+		}
+
+		.site-branding a svg {
+			width: 5.5rem;
+			height: 3.625rem;
+		}
+	}
+}

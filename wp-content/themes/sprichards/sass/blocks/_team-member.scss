@@ -1,0 +1,192 @@
+.team-member-block .member-card {
+
+	max-width: 350px;
+	background: #fff;
+	box-shadow: 0 12px 30px 17px rgba(133, 134, 138, 0.19);
+	border-radius: 6px;
+	transition: all 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.01) translateY(-5px);
+	}
+
+	&__picture {
+
+		img {
+			display: block;
+			transition: all 0.3s;
+			filter: grayscale(100%);
+		}
+
+		&:hover img {
+			filter: grayscale(0%);
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 1rem 0.5rem 1rem;
+	}
+
+	&__content__group {
+		flex: 0 0 80% !important;
+	}
+
+	&__name {
+		font-size: $font__size-extra-large;
+		font-weight: $font__weight-bold;
+		font-family: $font__secondary;
+		text-transform: uppercase;
+		color: $color__dark-grey;
+		font-style: italic;
+		line-height: 130%;
+		margin: 0 0 1rem 0;
+	}
+
+	&__role {
+		color: #58595b;
+		min-height: 3.5rem;
+	}
+
+	&__link {
+		outline: none;
+
+		&:hover svg path {
+			fill: $color__primary;
+		}
+	}
+}
+
+.team-member-block .modal {
+
+	&.is-open {
+		display: flex;
+	}
+
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 150000;
+	background: rgba(0, 0, 0, 0.6);
+	justify-content: center;
+	align-items: center;
+
+	&__close-overlay {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+		padding: 3rem 1.5rem;
+		position: relative;
+		background: #fff;
+		border-radius: 10px;
+		max-width: calc(69.375rem - ($container__padding * 2));
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 10px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	&__header {
+
+		button {
+			display: none;
+			border: none;
+			padding: 0.5rem;
+			width: 1.5rem;
+			height: 1.5rem;
+			top: 0.625rem;
+			right: 1.25rem;
+			position: absolute;
+			background: transparent;
+		}
+	}
+
+	&__body {
+		display: flex;
+	}
+
+	&__content-heading {
+		display: flex;
+		justify-content: space-between;
+
+		&__group {
+			display: flex;
+		}
+
+		&__logo {
+			width: 60px;
+			margin-right: 1rem;
+		}
+
+		&__logo svg {
+			width: 100%;
+		}
+
+		&__content h4 {
+			font-size: $font__size-extra-large;
+			font-weight: $font__weight-black;
+			font-family: $font__secondary;
+			text-transform: uppercase;
+			color: $color__dark-grey;
+			font-style: italic;
+			line-height: 130%;
+			margin: 0;
+		}
+
+		&__role {
+			font-size: $font__size-small;
+			font-weight: $font__weight-bold;
+			font-family: $font__secondary;
+			text-transform: uppercase;
+			color: $color__grey;
+			font-style: italic;
+			margin: 0;
+		}
+
+		&__link {
+			display: flex;
+			align-items: center;
+
+			a {
+				outline: none;
+			}
+
+			a:hover svg path {
+				fill: $color__primary;
+			}
+		}
+	}
+
+	&__description {
+		font-size: $font__size-small;
+	}
+
+	&__picture {
+		display: none;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		&__container {
+			padding: 4.75rem;
+		}
+
+		&__picture {
+			display: block;
+			padding-right: 2rem;
+		}
+
+		&__content {
+			max-width: 31.25rem;
+		}
+	}
+}

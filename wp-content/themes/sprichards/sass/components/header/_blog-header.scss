@@ -1,0 +1,49 @@
+.blog .page-title-block,
+.single-post .page-title-block {
+	margin-bottom: 3rem;
+}
+
+.blog-tagline {
+	margin-bottom: 2rem;
+
+	&__text {
+		margin: 0;
+		line-height: 1;
+		font-style: italic;
+		font-size: 1.375rem;
+		text-transform: uppercase;
+		font-weight: $font__weight-black;
+		color: $color__dark_grey;
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+		margin-bottom: 0;
+
+		&__text {
+			color: $color__primary;
+			line-height: 1.5;
+			font-size: 2rem;
+		}
+	}
+}
+
+.blog-return {
+	margin-bottom: 2rem;
+
+	a {
+		font-style: normal;
+		font-size: 0.875rem;
+		text-decoration: none;
+		color: $color__primary;
+		font-weight: $font__weight-black;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&:visited,
+		&:active {
+			color: $color__primary;
+		}
+	}
+}

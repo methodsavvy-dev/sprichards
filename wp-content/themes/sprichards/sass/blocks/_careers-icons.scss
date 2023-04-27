@@ -1,0 +1,56 @@
+.careers-icons-block {
+	margin: 3rem 0;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__item {
+		flex: 0 0 33.33%;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	&__title {
+		font-weight: $font__weight-black;
+		font-family: $font__secondary;
+		text-transform: uppercase;
+		color: $color__black;
+		font-style: italic;
+	}
+
+	&__icon {
+		width: 66px;
+		margin: 0 auto;
+
+		svg {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		margin: 5rem 0;
+
+		&__item {
+			flex: 1;
+			margin-bottom: 0;
+			min-width: 130px;
+		}
+
+		&__title {
+			font-size: $font__size-extra-large;
+			margin: 0.5rem;
+		}
+
+		&__icon {
+			width: 115px;
+		}
+	}
+}

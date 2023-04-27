@@ -1,0 +1,15 @@
+{
+  "title": "Timeline Block",
+  "name": "sprichards/timeline",
+  "description": "Timeline Block",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["content", "timeline"],
+  "icon": "block-default",
+  "category": "layout",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "timeline.php"
+  }
+}

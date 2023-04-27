@@ -1,0 +1,13 @@
+{
+  "title": "Tag List",
+  "name": "sprichards/tag-list",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "icon": "block-default",
+  "category": "content",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tag-list.php"
+  }
+}

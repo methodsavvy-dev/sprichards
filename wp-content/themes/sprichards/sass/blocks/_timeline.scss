@@ -1,0 +1,127 @@
+.timeline-block {
+
+	position: relative;
+	overflow: hidden;
+	width: 99vw;
+
+	sup {
+		top: 0;
+		font-size: 1rem;
+	}
+
+	&__content {
+		height: 600px;
+		display: flex;
+		padding-left: 6rem;
+		flex-wrap: no-wrap;
+	}
+
+	&__item {
+		flex: 0 0 18rem;
+		padding-right: 6rem;
+		will-change: transform;
+	}
+
+	&__item-image {
+		margin-bottom: 1rem;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		display: flex;
+		height: calc(290px + 2rem);
+		background-color: #fff;
+		padding: 1rem;
+		overflow: hidden;
+		border-radius: 6px;
+		box-shadow: 0 0 7px 0 rgb(0 0 0 / 32%);
+
+		img {
+			display: block;
+			max-width: calc(100% - 1.5rem);
+			max-height: 290px;
+			margin: 0;
+		}
+	}
+
+	&__item-year {
+
+		span {
+			font-size: 32px;
+			font-style: italic;
+			color: $color__primary;
+			font-family: $font__secondary;
+			font-weight: $font__weight-black;
+			line-height: 100%;
+		}
+	}
+
+	&__item-content {
+		font-size: 0.875rem;
+		text-align: center;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	&__red-line {
+		left: 0;
+		top: 155px;
+		height: 6px;
+		width: 100%;
+		position: absolute;
+		background-color: $color__primary;
+	}
+
+	&__side-years-container {
+		top: 0;
+		left: 0;
+		width: 90px;
+		height: 100%;
+		z-index: 3000;
+		overflow: hidden;
+		position: absolute;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 256, 1) 50%, rgba(255, 255, 255, 0) 100%);
+	}
+
+	&__side-years {
+		height: 100%;
+		display: flex;
+		color: $color__primary;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__side-year {
+		font-family: $font__secondary;
+		font-weight: $font__weight-black;
+		padding-left: 0.5rem;
+		margin-bottom: 1rem;
+		font-style: italic;
+		text-align: right;
+		font-size: 1.5rem;
+		width: 40px;
+	}
+
+	&__side-divider {
+		height: 1px;
+		width: 40px;
+		margin-bottom: 1rem;
+		border-bottom: 1px solid $color__primary;
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+
+		&__content {
+			height: 600px;
+			display: flex;
+			padding-left: 7rem;
+			flex-wrap: no-wrap;
+		}
+
+		&__item {
+			flex: 0 0 30rem;
+			padding-right: 10rem;
+			will-change: transform;
+		}
+	}
+}

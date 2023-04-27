@@ -1,0 +1,15 @@
+{
+  "title": "Footer Legal",
+  "name": "acf/footer-legal",
+  "description": "Footer Legal for Sprichards",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["footer", "legal"],
+  "category": "footer",
+  "version": "1.0.0",
+  "icon": "menu-alt",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "footer-legal.php"
+  }
+}

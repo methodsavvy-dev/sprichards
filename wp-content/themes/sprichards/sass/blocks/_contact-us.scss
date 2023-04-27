@@ -1,0 +1,164 @@
+.contact-us-block {
+	margin-bottom: 0;
+	padding: 2.5rem 0;
+	background-color: $color__white;
+
+	&__inner {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	&__text {
+		font-size: $font__size-small;
+	}
+
+	&__contact-info {
+		font-size: $font__size-base;
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+		}
+
+		li:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+
+		h4 {
+			font-weight: $font__weight-normal;
+			font-family: $font__primary;
+			font-size: $font__size-base;
+			color: $color__spr-grey;
+			margin: 0;
+		}
+
+		p {
+			color: $color__dark-grey;
+			margin: 0;
+		}
+	}
+
+	&__contact-info &__social {
+		display: flex;
+		margin-top: 1rem;
+
+		li:not(:last-child) {
+			margin-right: 0.5rem;
+		}
+	}
+
+	&__form {
+		margin-bottom: 2.5rem;
+
+		br,
+		.wpcf7-spinner {
+			display: none;
+		}
+
+		.wpcf7-form {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			align-items: stretch;
+		}
+
+		label {
+			font-size: 0.75rem;
+			color: $color__grey;
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+		}
+
+		input {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			border-radius: 0;
+			max-width: unset;
+			background: transparent;
+			// get rid of the default border
+			border: none;
+			// add a bottom border
+			border-bottom: 1px solid $color__grey;
+		}
+
+		input:focus {
+			outline: none;
+		}
+
+		.name {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.name label {
+			max-width: 49%;
+		}
+
+		.wpcf7-submit {
+
+			@include primary-button;
+
+			border: none;
+			cursor: pointer;
+			margin-top: 2rem;
+			font-style: normal;
+			align-self: flex-end;
+			padding: 0.75rem 2.5rem;
+			font-family: $font__primary;
+		}
+
+		.wpcf7-form.invalid input {
+			border: none;
+			border-bottom: 1px solid $color__primary;
+		}
+
+		.wpcf7-response-output {
+			width: 100%;
+		}
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+		padding: 0;
+
+		&__inner {
+			flex-direction: row;
+
+			> div {
+				flex: 0 0 50%;
+			}
+		}
+
+		&__contact-info &__social {
+			display: flex;
+			margin-top: 2rem;
+		}
+
+		&__form {
+			max-width: 28rem;
+
+			h3 {
+				display: block;
+				font-style: italic;
+				margin: 0 0 1.5rem;
+				font-size: 1.875rem;
+				color: $color__dark-grey;
+				text-transform: uppercase;
+				font-weight: $font__weight-black;
+			}
+		}
+
+		&__content {
+			display: flex;
+			padding-right: 7rem;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&__contact-info {
+			display: inline-block;
+		}
+	}
+}

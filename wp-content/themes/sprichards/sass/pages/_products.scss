@@ -1,0 +1,196 @@
+// products-and-services/products/
+.page-id-26,
+.page-id-28 {
+
+	.propietary-brands-block {
+		margin-top: 2.625rem;
+
+		@media (min-width: map-get($breakpoints, "md")) {
+			margin-top: 6.25rem;
+		}
+	}
+
+	.products {
+		padding-top: 2.625rem;
+		margin-bottom: 0;
+
+		.section-btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			@include primary-button;
+		}
+
+		.big-panel-c__text {
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		@media (min-width: map-get($breakpoints, "md")) {
+			padding-top: 6.25rem;
+			margin-bottom: 0;
+		}
+	}
+
+	.jansan {
+
+		.big-panel-c__title {
+			border-color: #00acb8;
+		}
+	}
+
+	.furniture {
+
+		.big-panel-c__title {
+			border-color: #b72467;
+		}
+	}
+
+	.technology {
+
+		.big-panel-c__title {
+			border-color: #104da7;
+		}
+	}
+
+	.office {
+
+		.big-panel-c__title {
+			border-color: #fbb224;
+		}
+	}
+}
+
+// products menu
+.page-id-26 .products-menu-block {
+
+	width: 100%;
+	margin-bottom: 0;
+
+	&__list {
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		list-style: none;
+		display: flex;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__item {
+
+		max-width: 370px;
+		height: 3.25rem;
+		width: 100%;
+
+		&:not(:last-child) {
+			margin-bottom: 1.25rem;
+		}
+
+		a {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			font-family: $font__secondary;
+			font-weight: $font__weight-black;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $color__white;
+			font-size: 1.375rem;
+			font-style: italic;
+		}
+	}
+
+	&__jansan a {
+		background-image: url(/wp-content/themes/sprichards/assets/images/jansan-mobile-bg.webp);
+	}
+
+	&__furniture a {
+		background-image: url(/wp-content/themes/sprichards/assets/images/furniture-mobile-bg.webp);
+	}
+
+	&__technology a {
+		background-image: url(/wp-content/themes/sprichards/assets/images/tech-mobile-bg.webp);
+	}
+
+	&__office a {
+		background-image: url(/wp-content/themes/sprichards/assets/images/office-mobile-bg.webp);
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		&__jansan a {
+			background-image: url(/wp-content/themes/sprichards/assets/images/jansan-bg.webp);
+		}
+
+		&__furniture a {
+			background-image: url(/wp-content/themes/sprichards/assets/images/furniture-bg.webp);
+		}
+
+		&__technology a {
+			background-image: url(/wp-content/themes/sprichards/assets/images/tech-bg.webp);
+		}
+
+		&__office a {
+			background-image: url(/wp-content/themes/sprichards/assets/images/office-bg.webp);
+		}
+
+		&__list {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&__item {
+
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media (min-width: map-get($breakpoints, "lg")) {
+
+		&__item {
+			height: 4.5rem;
+			max-width: none;
+
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+
+			a {
+				font-size: 2.625rem;
+			}
+
+			span {
+				line-height: 2.2rem;
+				position: absolute;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+.page-id-28 {
+
+	.home-why-choose {
+		margin-top: 2.625rem;
+
+		@media (min-width: map-get($breakpoints, "md")) {
+			margin-top: 6.25rem;
+		}
+	}
+
+}

@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__secondary;
+	clear: both;
+}
+
+h3 {
+	letter-spacing: 0.5px;
+}
+
+.section-title {
+	font-size: $font__size-mobile-title;
+	font-weight: $font__weight-black;
+	font-family: $font__secondary;
+	text-transform: uppercase;
+	color: $color__dark_grey;
+	margin-bottom: 1.5rem;
+	font-style: italic;
+	line-height: 130%;
+	margin-top: 0;
+}
+
+.with-red-line,
+.with-red-line-mobile-only {
+	width: fit-content;
+	padding-bottom: 0.5rem;
+	border-bottom: 4px solid $color__primary;
+}
+
+@media (min-width: map-get($breakpoints, "md")) {
+
+	.with-red-line-mobile-only {
+		border-bottom: none;
+		padding-bottom: 0;
+		width: 100%;
+	}
+
+	.section-title {
+		font-size: $font__size-desktop-title;
+	}
+}

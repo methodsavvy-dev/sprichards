@@ -1,0 +1,35 @@
+.page-id-24 .team-container .wp-block-group__inner-container {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	> div {
+		max-width: 350px;
+		flex: 0 0 100%;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		> div {
+			flex: 0 0 50%;
+		}
+
+		> div:nth-child(odd) {
+			margin-right: 0.5rem;
+		}
+
+		> div:nth-child(even) {
+			margin-left: 0.5rem;
+		}
+	}
+}
+
+.team-container,
+.team-title-container {
+	max-width: 860px;
+}
+
+.team-title-container {
+	margin-bottom: 3rem;
+}

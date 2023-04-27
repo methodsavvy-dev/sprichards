@@ -1,0 +1,13 @@
+{
+  "title": "Infinite Brand Carousel",
+  "name": "sprichards/infinite-brand-carousel",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "icon": "block-default",
+  "category": "content",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "infinite-brand-carousel.php"
+  }
+}

@@ -1,0 +1,38 @@
+// products-and-services/locations/
+.page-id-30 {
+
+	.page-menu-block {
+		margin-bottom: 1.5rem;
+	}
+
+	.home-why-choose {
+		margin-bottom: 0;
+	}
+
+	.home-counter {
+		margin-bottom: 0;
+	}
+
+	.still-have-questions {
+		padding: 1.25rem;
+		margin: 2rem auto 3rem;
+
+		p {
+			color: $color__spr-grey;
+		}
+
+		@media (min-width: map-get($breakpoints, "md")) {
+			text-align: center;
+			margin: 0 auto;
+			max-width: 40rem;
+			padding: 6.25rem;
+		}
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		.page-menu-block {
+			margin-bottom: 3.5rem;
+		}
+	}
+}

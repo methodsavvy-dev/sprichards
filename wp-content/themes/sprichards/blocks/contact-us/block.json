@@ -1,0 +1,15 @@
+{
+  "title": "Contact Us Block",
+  "name": "sprichards/contact-us",
+  "description": "Contact Us Block",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["layout", "content", "form"],
+  "icon": "block-default",
+  "category": "content",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "contact-us.php"
+  }
+}

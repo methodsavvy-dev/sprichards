@@ -1,0 +1,15 @@
+{
+  "title": "Big Panel - B",
+  "name": "sprichards/big-panel-b",
+  "description": "Big panel with information",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["layout", "content", "panel"],
+  "icon": "block-default",
+  "category": "content",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "big-panel-b.php"
+  }
+}

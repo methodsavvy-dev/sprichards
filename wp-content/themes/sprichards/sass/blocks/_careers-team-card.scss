@@ -1,0 +1,90 @@
+.careers-team-card-block {
+
+	&__inner-container {
+		background: #fff;
+		margin-bottom: 2rem;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+		border-radius: 6px;
+		overflow: hidden;
+		padding: 1rem;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__image {
+		margin-bottom: 1rem;
+
+		img {
+			display: block;
+			max-width: 280px;
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+
+	&__content__name {
+		font-size: $font__size-extra-large;
+		font-weight: $font__weight-bold;
+		font-family: $font__secondary;
+		text-transform: uppercase;
+		color: $color__dark-grey;
+		font-style: italic;
+		line-height: 130%;
+		margin: 0;
+	}
+
+	&__content__role {
+		color: #58595b;
+		font-style: italic;
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+		font-weight: $font__weight-bold;
+		font-family: $font__secondary;
+	}
+
+	&__content__description {
+		font-size: $font__size-small;
+	}
+
+	&__content__link {
+		outline: none;
+		display: block;
+		margin-top: 1rem;
+
+		&:hover svg path {
+			fill: $color__primary;
+		}
+	}
+
+	@media (min-width: map-get($breakpoints, md)) {
+
+		&__inner-container {
+			max-width: 45rem;
+			padding: 0;
+			margin: 0;
+		}
+
+		&:nth-child(even) {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		&__inner {
+			flex-direction: row;
+		}
+
+		&__image {
+			display: contents;
+		}
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 1rem 2rem;
+		}
+	}
+}

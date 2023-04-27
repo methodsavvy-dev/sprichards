@@ -1,0 +1,102 @@
+.big-panel-c {
+
+	&__inner {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	&__image {
+		// This will help with the image not being cut off on mobile
+		width: calc(100% + $container__padding * 2);
+		margin-left: -#{$container__padding};
+		overflow: hidden;
+
+		img {
+			display: block;
+		}
+	}
+
+	&__content {
+		padding: 2rem 0 0 0;
+	}
+
+	&__content-container {
+		position: relative;
+	}
+
+	&__title {
+		font-size: $font__size-mobile-title;
+		font-weight: $font__weight-black;
+		font-family: $font__secondary;
+		text-transform: uppercase;
+		color: $color__dark_grey;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+		line-height: 130%;
+		margin-top: 0;
+	}
+
+	&__text {
+		color: $color__dark_grey;
+		font-size: 20px;
+	}
+
+	&__text h3 {
+		font-size: $font__size-mobile-title;
+		font-weight: $font__weight-bold;
+		font-family: $font__secondary;
+		text-transform: uppercase;
+		color: $color__black;
+		font-style: italic;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		&__inner {
+			flex-direction: row;
+		}
+
+		&__inner[data-reverse="1"] {
+			flex-direction: row-reverse;
+		}
+
+		&__image,
+		&__content {
+			flex: 0 0 50%;
+		}
+
+		&__image {
+			align-self: stretch;
+			margin-left: 0;
+			height: unset;
+			width: unset;
+
+			img {
+				max-height: 650px;
+				max-width: unset;
+				height: 100%;
+			}
+		}
+
+		&__content {
+			padding: 0 0 0 3rem;
+			max-width: math.div($container--width, 2) - $container__padding;
+		}
+
+		&__inner[data-reverse="1"] &__content {
+			padding: 0 3rem 0 0;
+		}
+
+		&__content-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+		}
+
+		&__title {
+			font-size: $font__size-desktop-title;
+		}
+	}
+}

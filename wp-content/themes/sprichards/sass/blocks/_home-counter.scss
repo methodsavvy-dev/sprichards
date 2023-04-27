@@ -1,0 +1,65 @@
+.home-counter {
+	padding: 3.75rem 0;
+	background-size: cover;
+	background-position: center;
+	background-color: #3b1b22;
+	background-repeat: no-repeat;
+
+	&__content {
+
+		ul {
+			justify-content: space-around;
+			list-style: none;
+			display: flex;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	&__item {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		display: flex;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+
+	&__data {
+		flex-direction: row;
+		align-items: center;
+		display: flex;
+	}
+
+	&__number,
+	&__suffix {
+		font-size: 2rem;
+		line-height: 100%;
+		color: $color__white;
+		font-weight: $font__weight-black;
+	}
+
+	&__title {
+		font-size: $font__size-extra-small;
+		font-weight: $font__weight-bold;
+		color: $color__white;
+		margin-top: 0.5rem;
+		line-height: 100%;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+		padding: 8.25rem 0;
+
+		&__number,
+		&__suffix {
+			font-size: 3.75rem;
+		}
+
+		&__title {
+			font-size: $font__size-base;
+		}
+	}
+}

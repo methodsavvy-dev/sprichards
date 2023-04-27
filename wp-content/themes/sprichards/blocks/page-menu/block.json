@@ -1,0 +1,15 @@
+{
+  "title": "Page Menu",
+  "name": "sprichards/page-menu",
+  "description": "Page Menu Block",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["page", "menu"],
+  "icon": "block-default",
+  "category": "layout",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "page-menu.php"
+  }
+}

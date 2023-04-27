@@ -1,0 +1,15 @@
+{
+  "title": "Pre-Footer Subscribe",
+  "name": "acf/pre-footer-subscribe",
+  "description": "Pre footer subscribe block for Sprichards",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["footer", "navigation"],
+  "category": "prefooter",
+  "version": "1.0.0",
+  "icon": "menu-alt",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "pre-footer-subscribe.php"
+  }
+}

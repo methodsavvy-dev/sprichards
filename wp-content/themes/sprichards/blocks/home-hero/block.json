@@ -1,0 +1,15 @@
+{
+  "title": "Home Hero",
+  "name": "sprichards/home-hero",
+  "description": "Home Hero Block",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["homepage", "hero", "home"],
+  "icon": "block-default",
+  "category": "homepage",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "home-hero.php"
+  }
+}

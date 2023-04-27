@@ -1,0 +1,15 @@
+{
+  "title": "Join Us Block",
+  "name": "acf/join-us",
+  "description": "Join Us Block",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["block", "join"],
+  "category": "content",
+  "version": "1.0.0",
+  "icon": "menu-alt",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "join-us.php"
+  }
+}

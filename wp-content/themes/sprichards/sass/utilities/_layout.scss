@@ -1,0 +1,36 @@
+.container,
+.container-wide {
+	padding-left: $container__padding;
+	padding-right: $container__padding;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-wide {
+	max-width: $container__width-wide;
+}
+
+.container {
+	max-width: $container__width;
+}
+
+.desktop-only {
+	display: none;
+}
+
+.is-fixed {
+	position: fixed;
+	width: 100%;
+}
+
+@media (min-width: map-get($breakpoints, "md")) {
+
+	.mobile-only {
+		display: none;
+	}
+
+	.desktop-only {
+		display: inline-block;
+	}
+}
+

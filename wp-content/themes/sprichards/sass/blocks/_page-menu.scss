@@ -1,0 +1,52 @@
+.page-menu-block {
+
+	&__nav-list {
+		padding: 0;
+		display: flex;
+		margin: 0 auto;
+		list-style: none;
+		max-width: 380px;
+		justify-content: space-between;
+	}
+
+	&__nav-item {
+
+		a {
+			text-decoration: none;
+			color: $color__grey;
+			border-color: $color__grey;
+
+			span {
+				display: none;
+			}
+
+			&.active {
+				border-color: $color__primary;
+				color: $color__dark-grey;
+			}
+
+			&:hover {
+				color: $color__primary;
+			}
+		}
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+
+		&__nav-list {
+			max-width: 70rem;
+			justify-content: space-around;
+		}
+
+		&__nav-item {
+
+			a {
+				padding-right: 5.5rem;
+			}
+
+			a span {
+				display: inline;
+			}
+		}
+	}
+}

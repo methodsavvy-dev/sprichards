@@ -1,0 +1,38 @@
+.blog,
+.single,
+.archive,
+.search {
+
+	.site-main {
+		margin-bottom: 3rem;
+	}
+
+	.widget-area {
+		margin-bottom: 3rem;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		.content-sidebar-container {
+			display: grid;
+			margin-bottom: 4rem;
+			grid-template-columns: auto ($size__site-sidebar);
+			grid-template-areas: "main sidebar";
+		}
+
+		.site-main {
+			grid-area: main;
+			margin-right: 2rem;
+			margin-bottom: 0;
+		}
+
+		.widget-area {
+			grid-area: sidebar;
+			margin-bottom: 0;
+		}
+	}
+
+	/* stylelint-disable-next-line no-invalid-position-at-import-rule */
+	@import "no-sidebar";
+
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Map Block",
+  "name": "sprichards/map-block",
+  "description": "Map Block",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["content", "map"],
+  "icon": "block-default",
+  "category": "layout",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "map-block.php"
+  }
+}

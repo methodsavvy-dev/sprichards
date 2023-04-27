@@ -1,0 +1,13 @@
+{
+  "title": "Icon Card Panel",
+  "name": "sprichards/icon-card-panel",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "icon": "block-default",
+  "category": "content",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "icon-card-panel.php"
+  }
+}

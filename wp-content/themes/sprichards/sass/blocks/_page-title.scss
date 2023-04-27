@@ -1,0 +1,36 @@
+.page-title-block {
+
+	background-color: $color__helper_02;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 1.625rem;
+	height: 7rem;
+
+	.container {
+		position: relative;
+	}
+
+	&__content {
+		font-weight: $font__weight-black;
+		font-size: $font__size-h2;
+		text-transform: uppercase;
+		left: $container__padding;
+		color: $color__white;
+		font-style: italic;
+		position: absolute;
+		line-height: 100%;
+		top: 5.1875rem;
+		margin: 0;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+		margin-bottom: 6rem;
+		height: 16.25rem;
+
+		&__content {
+			font-size: $font__size-desktop-title-xl;
+			top: 13.25rem;
+		}
+	}
+}

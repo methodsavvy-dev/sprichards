@@ -1,0 +1,15 @@
+{
+  "title": "Product Page Menu",
+  "name": "sprichards/product-page-menu",
+  "description": "Product Page Menu Block",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["page", "menu"],
+  "icon": "block-default",
+  "category": "layout",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "product-page-menu.php"
+  }
+}

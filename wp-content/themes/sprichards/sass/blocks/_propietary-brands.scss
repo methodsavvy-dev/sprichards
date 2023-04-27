@@ -1,0 +1,62 @@
+.propietary-brands-block {
+
+	&__text {
+		color: $color__grey;
+	}
+
+	&__brands {
+		display: flex;
+		margin-top: 2rem;
+		flex-direction: column;
+	}
+
+	&__brand {
+
+		text-align: center;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+		h4 {
+			font-family: $font__primary;
+			color: $color__grey;
+			margin: 0;
+		}
+
+		&__link {
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+
+			img {
+				display: block;
+			}
+		}
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		&__brands {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		&__brand {
+
+			display: flex;
+			max-width: 20rem;
+			flex-direction: column;
+
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+
+			&:first-child h4 {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}

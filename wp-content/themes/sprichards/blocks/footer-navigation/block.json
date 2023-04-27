@@ -1,0 +1,15 @@
+{
+  "title": "Footer Navigation",
+  "name": "acf/footer-navigation",
+  "description": "Footer navigation for Sprichards",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["footer", "navigation"],
+  "category": "footer",
+  "version": "1.0.0",
+  "icon": "menu-alt",
+  "align": "full",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "footer-navigation.php"
+  }
+}

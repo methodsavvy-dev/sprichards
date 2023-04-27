@@ -1,0 +1,63 @@
+// products-and-services/products/
+.page-id-34 {
+
+	.customer-intro {
+		position: relative;
+		color: $color__grey;
+		margin-bottom: 3.75rem;
+	}
+
+	.button-group {
+		display: flex;
+		flex-direction: column;
+
+		.section-btn {
+
+			@include primary-button;
+			width: 10rem;
+		}
+
+		.section-btn:not(:last-child) {
+			margin-bottom: 1.25rem;
+		}
+	}
+
+	.big-panel-c {
+
+		margin-bottom: 2.75rem;
+
+		&__title {
+			border-color: $color__secondary;
+			font-size: 1.875rem;
+		}
+	}
+
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		.customer-intro {
+			margin-bottom: 6.25rem;
+
+			.wp-block-group__inner-container {
+				max-width: calc(100% - 13.75rem);
+				margin-left: 0 !important;
+				margin-right: 0 !important;
+			}
+		}
+
+		.button-group {
+			position: absolute;
+			top: 18px;
+			right: 0;
+
+			.section-btn {
+				width: 13.75rem;
+			}
+		}
+
+		.big-panel-c {
+
+			margin-bottom: 4.75rem;
+		}
+	}
+}

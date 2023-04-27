@@ -1,0 +1,86 @@
+.join-us-block {
+	background-color: $color__primary;
+	color: $color__white;
+	margin-bottom: 0;
+	padding: 2rem 0;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__content {
+
+		h3 {
+			font-size: 2rem;
+			line-height: 24px;
+			font-style: italic;
+			margin: 0 0 1rem 0;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: $font__size-small;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__button {
+
+		a {
+
+			@include primary-button;
+			background-color: $color__white;
+			color: $color__primary;
+			padding: 1rem 2rem;
+			margin-top: 1rem;
+			display: block;
+
+			&:hover {
+				background-color: #dfdfdf;
+			}
+
+			&:hover,
+			&:focus,
+			&:active,
+			&:visited {
+				color: $color__primary;
+			}
+		}
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+		padding: 5rem 0;
+
+		.container {
+			flex-direction: row;
+			align-items: center;
+		}
+
+		&__content {
+			flex: 0 0 60%;
+			padding-right: 3.75rem;
+
+			h3 {
+				font-size: 2.625rem;
+			}
+
+			p {
+				font-size: 1.375rem;
+			}
+		}
+
+		&__button {
+			flex: 0 0 40%;
+
+			a {
+				display: inline;
+				padding: 1rem 3rem;
+				font-size: $font__size-large;
+			}
+		}
+	}
+}

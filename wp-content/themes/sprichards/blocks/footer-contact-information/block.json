@@ -1,0 +1,15 @@
+{
+  "title": "Footer Contact Information",
+  "name": "acf/footer-contact",
+  "description": "Footer contact information for Sprichards",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["footer", "contact"],
+  "category": "footer",
+  "version": "1.0.0",
+  "icon": "menu-alt",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "footer-contact.php"
+  }
+}

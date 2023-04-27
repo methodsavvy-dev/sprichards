@@ -1,0 +1,15 @@
+{
+  "title": "Home Page Counter",
+  "name": "sprichards/home-counter",
+  "description": "Home page counter block for Sprichards theme",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["homepage", "counter", "home"],
+  "icon": "block-default",
+  "category": "homepage",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "home-counter.php"
+  }
+}

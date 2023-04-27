@@ -1,0 +1,94 @@
+.home-full-service {
+
+	h2 {
+		text-align: left;
+
+	}
+
+	p {
+		text-align: left;
+		font-size: $font__size-small;
+	}
+
+	p:first-of-type {
+		margin-top: 0;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		h2 {
+			text-align: center;
+		}
+
+		p {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 680px;
+			line-height: 130%;
+			text-align: center;
+			font-size: $font__size-extra-large;
+		}
+	}
+}
+
+.home-why-choose .big-panel-a__text {
+
+	ul {
+		padding: 0 0 0 1rem;
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		margin-bottom: 1rem;
+		position: relative;
+	}
+
+	li::before {
+		content: "";
+		position: absolute;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjQ5OTkgMC40MDk1NzdDMTYuODA3NyAwLjY4MjgyNyAxNi45ODc0IDEuMDU5NjggMTYuOTk5NCAxLjQ1NzI4QzE3LjAxMTMgMS44NTQ4NyAxNi44NTQ3IDIuMjQwNjYgMTYuNTYzOCAyLjUyOTgyTDcuNTExMTYgMTEuNTMwOUM3LjM2NDQ0IDExLjY3NjUgNy4xODgxMyAxMS43OTMgNi45OTI2NCAxMS44NzM2QzYuNzk3MTYgMTEuOTU0MSA2LjU4NjQ2IDExLjk5NzEgNi4zNzMgMTEuOTk5OUM2LjE1OTU1IDEyLjAwMjcgNS45NDc2NiAxMS45NjUyIDUuNzQ5ODUgMTEuODg5OEM1LjU1MjA1IDExLjgxNDQgNS4zNzIzNSAxMS43MDI2IDUuMjIxMzYgMTEuNTYwOUwwLjQyODc2IDcuMDYwMzRDMC4xNDY1NzIgNi43NzU5NiAtMC4wMDcwNTMzNiA2LjM5OTgzIDAuMDAwMjQ4ODg5IDYuMDExMThDMC4wMDc1NTExNCA1LjYyMjUzIDAuMTc1MjExIDUuMjUxNzIgMC40Njc5MDcgNC45NzY4NkMwLjc2MDYwMyA0LjcwMiAxLjE1NTQ4IDQuNTQ0NTYgMS41NjkzNSA0LjUzNzdDMS45ODMyMiA0LjUzMDg1IDIuMzgzNzcgNC42NzUxMSAyLjY4NjYxIDQuOTQwMUw2LjMxODMzIDguMzQ4NDlMMTQuMjQyMSAwLjQ2OTU4NEMxNC41MzMxIDAuMTgwNTQ1IDE0LjkzNDQgMC4wMTE4NTM5IDE1LjM1NzggMC4wMDA2MDExNTZDMTUuNzgxMiAtMC4wMTA2NTE2IDE2LjE5MiAwLjEzNjQ1NSAxNi40OTk5IDAuNDA5NTc3WiIgZmlsbD0iIzU4NTk1QiIvPgo8L3N2Zz4K);
+		background-repeat: no-repeat;
+		background-position: center;
+		display: inline-block;
+		background-size: 100%;
+		height: 12px;
+		width: 10px;
+		left: -1rem;
+		top: 7px;
+	}
+
+	h3 {
+		font-style: italic;
+		margin-bottom: 0.25rem;
+		color: $color__dark_grey;
+		text-transform: uppercase;
+		font-size: $font__size-base;
+		font-weight: $font__weight-black;
+	}
+
+	p {
+		font-size: $font__size-small;
+		color: $color__dark_grey;
+		line-height: 150%;
+	}
+
+	p:first-of-type {
+		margin-top: 0;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		h3 {
+			font-size: $font__size-large;
+		}
+
+		p {
+			font-size: $font__size-base;
+		}
+	}
+}

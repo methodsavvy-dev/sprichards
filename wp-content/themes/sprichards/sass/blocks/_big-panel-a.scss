@@ -1,0 +1,68 @@
+.big-panel-a {
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__image {
+		height: 120px;
+		background-size: cover;
+		background-position: right;
+		background-repeat: no-repeat;
+		// This will help with the image not being cut off on mobile
+		width: calc(100% + $container__padding * 2);
+		margin-left: -#{$container__padding};
+	}
+
+	&__content {
+		padding: 2rem 0;
+	}
+
+	&__title {
+		font-size: $font__size-mobile-title;
+		font-weight: $font__weight-black;
+		font-family: $font__secondary;
+		text-transform: uppercase;
+		color: $color__secondary;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+		line-height: 130%;
+		margin-top: 0;
+	}
+
+	@media (min-width: map-get($breakpoints, "md")) {
+
+		&__inner {
+			flex-direction: row;
+			min-height: 42rem;
+		}
+
+		&__image,
+		&__content {
+			flex: 0 0 50%;
+		}
+
+		&__image {
+			margin-left: 0;
+			height: unset;
+			width: unset;
+		}
+
+		&__content {
+			padding: 6rem 0 6rem 3rem;
+			max-width: math.div($container--width, 2) - $container__padding;
+		}
+
+		&__content-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+		}
+
+		&__title {
+			font-size: $font__size-desktop-title;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Home Portals",
+  "name": "sprichards/home-portals",
+  "description": "Home Portals",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["homepage", "portals", "home"],
+  "icon": "block-default",
+  "category": "homepage",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "home-portals.php"
+  }
+}

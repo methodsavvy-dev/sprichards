@@ -1,0 +1,14 @@
+{
+	"title": "Page Title",
+	"name": "sprichards/page-title",
+	"description": "Page Title Block",
+	"author": "Aarón Maldonado @ Method Savvy",
+	"keywords": [ "page", "title" ],
+	"icon": "block-default",
+	"category": "layout",
+  "align": "full",
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "page-title.php"
+	}
+}

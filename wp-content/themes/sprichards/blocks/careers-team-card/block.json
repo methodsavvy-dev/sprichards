@@ -1,0 +1,15 @@
+{
+  "title": "Careers Team Card",
+  "name": "sprichards/careers-team-card",
+  "description": "Careers Team Card",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["layout", "content"],
+  "icon": "block-default",
+  "category": "content",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "careers-team-card.php"
+  }
+}

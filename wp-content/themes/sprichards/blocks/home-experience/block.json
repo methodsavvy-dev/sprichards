@@ -1,0 +1,15 @@
+{
+  "title": "Home Page Experience",
+  "name": "sprichards/home-experience",
+  "description": "Home page experience block for Sprichards theme",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["home", "experience"],
+  "icon": "block-default",
+  "category": "homepage",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "home-experience.php"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Careers page icon list",
+  "name": "sprichards/careers-icons",
+  "description": "Careers page icon list",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["layout", "content"],
+  "icon": "block-default",
+  "category": "content",
+  "version": "1.0.0",
+  "align": "full",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "careers-icons.php"
+  }
+}

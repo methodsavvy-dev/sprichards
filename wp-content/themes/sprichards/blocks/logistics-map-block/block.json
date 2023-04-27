@@ -1,0 +1,15 @@
+{
+  "title": "Logistics Map Block",
+  "name": "sprichards/logistics-map-block",
+  "description": "Logistics Map Block",
+  "author": "Aarón Maldonado @ Method Savvy",
+  "keywords": ["block", "logistics"],
+  "category": "content",
+  "version": "1.0.0",
+  "icon": "menu-alt",
+  "align": "full",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "logistics-map-block.php"
+  }
+}
