@@ -1,0 +1,309 @@
+.logistics-map-editable-block {
+	margin-bottom: 0;
+
+	&__app {
+		display: flex;
+		flex-direction: column;
+	}
+
+	iframe {
+		display: flex;
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+
+		&__app {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
+
+.logistics-map-editable-block__heading {
+	margin-bottom: 1.5rem;
+
+	p {
+		font-size: $font__size-base;
+		color: $color__spr-grey;
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+
+		display: flex;
+		justify-content: space-between;
+
+		p {
+			max-width: 32rem;
+		}
+	}
+}
+
+.logistics-map-editable-block .state-list {
+
+	margin-bottom: 2rem;
+
+	ul {
+		display: grid;
+		grid-row-gap: 1rem;
+		grid-column-gap: 2.5rem;
+		grid-template-columns: repeat(3, 1fr);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		cursor: pointer;
+		font-style: italic;
+		color: $color__black;
+		text-transform: uppercase;
+		font-family: $font__secondary;
+		font-weight: $font__weight-bold;
+
+		&.active {
+			color: #008a93;
+		}
+
+		// This is for the linked states of the active state
+		// commented out because it's not needed for now
+		// &.semi-active {
+		// 	color: $color__secondary;
+		// }
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+
+		margin-bottom: 0;
+
+		&__item {
+			font-size: $font__size-extra-large;
+		}
+	}
+}
+
+.logistics-map-editable-block .network-map {
+	position: relative;
+	height: 200px;
+
+	&__overlay,
+	&__base {
+		position: absolute;
+		min-height: 9rem;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	&__overlay {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: 15;
+
+		&.s1 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s1.webp);
+		}
+
+		&.s2 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s2.webp);
+		}
+
+		&.s3 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s3.webp);
+		}
+
+		&.s4 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s4.webp);
+		}
+
+		&.s5 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s5.webp);
+		}
+
+		&.s6 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s6.webp);
+		}
+
+		&.s7 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s7.webp);
+		}
+
+		&.s8 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s8.webp);
+		}
+
+		&.s9 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s9.webp);
+		}
+
+		&.s10 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s10.webp);
+		}
+
+		&.s11 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s11.webp);
+		}
+
+		&.s12 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s12.webp);
+		}
+
+		&.s13 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s13.webp);
+		}
+
+		&.s14 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s14.webp);
+		}
+
+		&.s15 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s15.webp);
+		}
+
+		&.s16 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s16.webp);
+		}
+
+		&.s17 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s17.webp);
+		}
+
+		&.s18 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s18.webp);
+		}
+
+		&.s19 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s19.webp);
+		}
+
+		&.s20 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s20.webp);
+		}
+
+		&.s21 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s21.webp);
+		}
+
+		&.s22 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s22.webp);
+		}
+
+		&.s23 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s23.webp);
+		}
+
+		&.s24 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s24.webp);
+		}
+
+		&.s25 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s25.webp);
+		}
+
+		&.s26 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s26.webp);
+		}
+
+		&.s27 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s27.webp);
+		}
+
+		&.s28 {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-s28.webp);
+		}
+	}
+
+	&__base {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: 10;
+
+		&.default {
+			background-image: url(/wp-content/themes/sprichards/assets/images/map-default.webp);
+		}
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+
+		width: 620px;
+		height: auto;
+	}
+}
+
+.logistics-map-editable-block .network-info {
+
+	&__location {
+		background-color: $color__tertiary;
+		padding: 2.5rem 0;
+		margin-top: 3rem;
+	}
+
+	&__location h4 {
+		font-size: $font__size-extra-large;
+		text-transform: uppercase;
+		color: $color__black;
+		margin: 0 0 0.5rem 0;
+		font-style: italic;
+		line-height: 100%;
+	}
+
+	&__location__info {
+		color: $color__spr-grey;
+		font-size: $font__size-small;
+		font-weight: $font__weight-bold;
+		flex-direction: column;
+		display: flex;
+	}
+
+	&__location__info p:last-child {
+		margin-bottom: 0;
+	}
+
+	&__phone-numbers {
+
+		a {
+			text-decoration: none;
+			color: $color__spr-grey;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			color: $color__black;
+		}
+	}
+
+	&__map {
+		width: 100%;
+		height: 200px;
+	}
+
+	@media (min-width: map.get($breakpoints, "md")) {
+
+		&__location .container {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		&__location__info {
+			flex-direction: row;
+		}
+
+
+		&__location__info p {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		&__address {
+			margin-right: 2rem;
+		}
+
+		&__map {
+
+			height: 400px;
+		}
+	}
+}
+

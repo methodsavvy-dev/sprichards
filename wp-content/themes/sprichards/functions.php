@@ -219,10 +219,16 @@ function sprichards_scripts()
 		wp_enqueue_script('team-member-script', get_template_directory_uri() . '/js/team-member.js', array('jquery'), SPRICHARDS_VERSION, true);
 	}
 
-	if (has_block('sprichards/logistics-map-block')) {
-		// TODO: Change to use Google Maps API Key
+	if (has_block('sprichards/logistics-map-block') || has_block('sprichards/logistics-editable-map')) {
 		wp_enqueue_script('google-maps-script', "https://maps.googleapis.com/maps/api/js?key=AIzaSyApXmda8uDmc7JOFRUckavgQwlBF7VbMkQ", array(), SPRICHARDS_VERSION, true);
+	}
+
+	if (has_block('sprichards/logistics-map-block')) {
 		wp_enqueue_script('logistics-map-script', get_template_directory_uri() . '/js/logistics-map.js', array('jquery', 'google-maps-script'), SPRICHARDS_VERSION, true);
+	}
+
+	if (has_block('sprichards/logistics-editable-map')) {
+		wp_enqueue_script('logistics-map-script', get_template_directory_uri() . '/js/logistics-editable-map.js', array('jquery', 'google-maps-script'), SPRICHARDS_VERSION, true);
 	}
 
 	if (has_block('sprichards/timeline')) {
@@ -317,6 +323,7 @@ function register_acf_blocks()
 	register_block_type(get_template_directory() . '/blocks/careers-team-card');
 
 	// Logistics page blocks
+	register_block_type(get_template_directory() . '/blocks/logistics-editable-map');
 	register_block_type(get_template_directory() . '/blocks/logistics-map-block');
 
 	// History page blocks

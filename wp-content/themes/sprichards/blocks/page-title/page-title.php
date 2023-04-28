@@ -17,9 +17,9 @@
       '38' => get_template_directory_uri() . '/assets/images/bg-contact.webp', 
     );
 
-    $background = $bg_array[$page_id];
+    $background = isset($bg_array[$page_id]) ? $bg_array[$page_id] : '';
 
-    if (empty($background)) {
+    if ( empty($background) ) {
       $background = get_template_directory_uri() . '/assets/images/bg-blog.webp';
     }
   }
