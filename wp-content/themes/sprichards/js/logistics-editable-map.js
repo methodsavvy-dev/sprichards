@@ -29,6 +29,12 @@
 	const address02Element = networkInfoElement.querySelector(
 		'.network-info__address-02'
 	);
+	const address03Element = networkInfoElement.querySelector(
+		'.network-info__address-03'
+	);
+	const address02BrElement = networkInfoElement.querySelector(
+		'.network-info__address-02__br'
+	);
 	/**
 	 * Set the network info.
 	 *
@@ -43,6 +49,13 @@
 		phone02Element.href = 'tel:' + data.phone1;
 		address01Element.textContent = data.address0;
 		address02Element.textContent = data.address1;
+		address03Element.textContent = data.address2;
+
+		if ( ! data.address1 ) {
+			address02BrElement.style.display = 'none';
+		} else {
+			address02BrElement.style.display = 'block';
+		}
 	};
 
 	// set the default network info on page load
@@ -90,7 +103,9 @@
 				setMarkerByAddress(
 					event.target.dataset.address1 +
 						' ' +
-						event.target.dataset.address2
+						event.target.dataset.address2 +
+						' ' +
+						event.target.dataset.address3
 				);
 
 				this.classList.add( 'active' );

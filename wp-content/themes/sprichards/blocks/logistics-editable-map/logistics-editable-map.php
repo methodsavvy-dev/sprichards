@@ -84,8 +84,9 @@
 						<h4 class="network-info__name"></h4>
 						<div class="network-info__location__info">
 							<p class="network-info__address">
-								<span class="network-info__address-01"></span><br />
-								<span class="network-info__address-02"></span>
+								<span class="network-info__address-01"></span><br class="network-info__address-01__br" />
+								<span class="network-info__address-02"></span><br class="network-info__address-02__br" />
+								<span class="network-info__address-03"></span>
 							</p>
 							<p class="network-info__phone-numbers">
 								Phone: <a href="" class="network-info__phone-01"></a><br />
